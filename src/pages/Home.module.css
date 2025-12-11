@@ -1,0 +1,65 @@
+body {
+    background: #282634;
+    color: #fff;
+}
+
+
+.title {
+    text-align: center;
+}
+
+.contentShows {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.contentShows div {
+    position: relative;
+    width: 200px;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.contentShows div:hover img {
+    transform: scale(1.15);
+}
+
+.contentShows div .titleBox {
+    content: "";
+    height: 100px;
+    position: absolute;
+    transform: translatey(50px);
+    transition: 0.3s ease;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), black);
+    width: 100%;
+    z-index: 1;
+}
+
+.contentShows div img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.3s ease;
+}
+
+.contentShows div .name {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    color: #fff;
+    transform: translatey(50px);
+    padding: 10px;
+    z-index: 10;
+    transition: .3s ease;
+    cursor: default;
+}
+
+.contentShows div:hover .name,
+.contentShows div:hover .titleBox {
+    transform: translatey(0);
+}

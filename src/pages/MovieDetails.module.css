@@ -1,0 +1,144 @@
+body {
+    background: #282634;
+    color: #fff;
+}
+
+
+.details-container {
+    padding: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+    animation: fadeIn 0.4s ease;
+}
+
+.back-btn {
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #00d1ff;
+    transition: color 0.2s ease;
+}
+
+.back-btn:hover {
+    color: #00a7cc;
+}
+
+.details-card {
+    display: flex;
+    gap: 32px;
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.4s ease;
+}
+
+.details-poster {
+    width: 320px;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.details-info {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.details-info h1 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.score {
+    font-size: 18px;
+    margin-bottom: 10px;
+    background: #ffd70044;
+    padding: 6px 12px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+.genre-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.genre-list li {
+    background: linear-gradient(135deg, #00d1ff, #0078ff);
+    color: #fff;
+    padding: 8px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.additional-box {
+    margin-top: 40px;
+    padding: 20px;
+    background: #ffffff10;
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    animation: slideUp 0.4s ease;
+}
+
+.additional-box h2 {
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.additional-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.additional-list li {
+    background: linear-gradient(135deg, #00d1ff, #0078ff);
+    padding: 10px 18px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.additional-list li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+.additional-list li a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

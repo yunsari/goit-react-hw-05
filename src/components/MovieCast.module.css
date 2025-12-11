@@ -1,0 +1,40 @@
+.cast-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cast-item {
+    text-align: center;
+    background: #ffffff10;
+    padding: 12px;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    transition: transform 0.2s ease;
+}
+
+.cast-item:hover {
+    transform: scale(1.05);
+}
+
+.cast-img {
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.cast-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.cast-char {
+    font-size: 14px;
+    opacity: 0.75;
+}
