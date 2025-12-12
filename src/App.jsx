@@ -3,14 +3,14 @@ import { Routes, Route } from "react-router-dom";
 
 import CircularProgress from "@mui/material/CircularProgress";
 
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/Navbar";
 
-const Home = lazy(() => import("./pages/Home"));
-const Movies = lazy(() => import("./pages/Movies"));
-const NotFound = lazy(() => import("./pages/NotFound"));
-const MovieDetails = lazy(() => import("./pages/MovieDetails"));
-const Cast = lazy(() => import("./components/MovieCast"));
-const Reviews = lazy(() => import("./components/MovieReviews"));
+const Home = lazy(() => import("./pages/Home/Home"));
+const Movies = lazy(() => import("./pages/Movies/Movies"));
+const NotFound = lazy(() => import("./pages/NotFound/NotFound"));
+const MovieDetails = lazy(() => import("./pages/MovieDetails/MovieDetails"));
+const Cast = lazy(() => import("./components/MovieCast/MovieCast"));
+const Reviews = lazy(() => import("./components/MovieReviews/MovieReviews"));
 
 function App() {
   return (

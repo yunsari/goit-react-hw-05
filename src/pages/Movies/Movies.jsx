@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Link, useSearchParams } from "react-router-dom";
-import { fetchSearchMovie } from "../api";
+import { fetchSearchMovie } from "../../api";
 import styles from "./Movies.module.css";
+
+import MovieList from "../../components/MovieList/MovieList";
 
 function Movies() {
   const [movies, setMovies] = useState([]);
@@ -45,24 +47,7 @@ function Movies() {
         </button>
       </form>
 
-      <div className={styles.contentShows}>
-        {movies.map((movie) => (
-          <Link to={`/movies/${movie.id}`} key={movie.id}>
-            <div>
-              <img
-                src={
-                  movie.poster_path
-                    ? `https://image.tmdb.org/t/p/w300${movie.poster_path}`
-                    : "https://via.placeholder.com/300x450?text=No+Image"
-                }
-                alt={movie.title}
-              />
-              <div className={styles.titleBox}></div>
-              <div className={styles.name}>{movie.title}</div>
-            </div>
-          </Link>
-        ))}
-      </div>
+      <MovieList movies={movies} />
     </main>
   );
 }
