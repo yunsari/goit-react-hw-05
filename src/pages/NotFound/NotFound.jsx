@@ -1,9 +1,9 @@
-import "../style.css";
+import styles from "./NotFound.module.css";
 
 function NotFound() {
   return (
-    <div id="main">
-      <div className="fof">
+    <div className={styles.main}>
+      <div className={styles.fof}>
         <p>404</p>
         <h1>Sayfa Bulunamadı!</h1>
       </div>
